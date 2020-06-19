@@ -10,10 +10,15 @@ header {
   min-width: 320px;
   min-height: 600px;
 }
-
+.center {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+ /* здесь я поменяю space-around изза него у тебя не как на макете отступы */
 .header_navbar__links {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .header_navbar__link {
@@ -58,7 +63,7 @@ header {
   margin: 10px;
   color: #727272;
 }
-
+/* опять неубрал оутлайн !!!!!! */
 .header_content_container__btn-object {
   font-family: Roboto;
   font-style: unset;
@@ -112,12 +117,15 @@ header {
   background-color: #34547a;
 }
 
+/* здесь размеры просмотри */
+
 .workplan_wrap {
+  margin: 0 auto;
   width: 100%;
+  max-width: 1110px;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-}
+} 
 
 .workplan_title {
   display: flex;
@@ -129,9 +137,10 @@ header {
   line-height: 37px;
 }
 
+/* и здесь если нужно подгони */
+
 .workplan_card {
-  max-width: 25%;
-  min-width: 250px;
+  width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -156,6 +165,7 @@ header {
   max-height: 500px;
 }
 
+/* зачем здесь маржин со всех сторон??? */
 .workplancard_title {
   display: flex;
   justify-content: center;
