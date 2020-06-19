@@ -108,22 +108,71 @@ header {
   color: #727272;
 }
 
-.workplan{
-  background-color: #34547A;
+.workplan {
+  background-color: #34547a;
 }
 
-.workplan_title{
+.workplan_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.workplan_title {
   display: flex;
   justify-content: center;
   padding: 10px;
-  color: #EEEFF1;
+  color: #eeeff1;
   font-weight: 500;
   font-size: 32px;
   line-height: 37px;
 }
 
+.workplan_card {
+  max-width: 25%;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color:#eeeff1;
+  border-radius: 5%;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.workplantext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #34547a;
+  font-weight: 500;
+  margin: 20px;
+}
+
+
+.workplanimg {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.workplancard_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.workplan_card:hover {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+
 .header_content_container__btn-object:hover {
-  background: rgb(104, 123, 149);
+  background: rgb(27, 28, 31);
   transition: 0.3s ease;
   cursor: pointer;
 }
